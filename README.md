@@ -6,3 +6,4 @@ The scanned data will be displayed on the screen.
 Click the "OK" button to send the scanned data to the Google Sheets spreadsheet.
 To view the scanned data, open the Google Sheets spreadsheet and navigate to the sheet where the data is being stored.
 
+https://github.com/nukrobzero/qr-code-scanner-next-js
