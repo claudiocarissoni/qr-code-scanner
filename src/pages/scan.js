@@ -49,10 +49,7 @@ export default function Scan() {
               className="lg:h-[500px] lg:w-[500px] h-[500px] w-[500px]"
               delay={300}
               onResult={handleScan}
-              constraints={{
-                audio: true,
-                video: { facingMode: "environment" },
-              }}
+              constraints={{ facingMode: "environment" }}
               key="environment"
               style={{ width: "60%", height: "60%" }}
               ref={qrRef}
