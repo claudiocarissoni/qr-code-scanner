@@ -43,7 +43,7 @@ export default function Scan() {
       </Head>
       <main className="flex flex-col mt-[5rem] justify-center items-center">
         <div className="flex flex-col justify-center items-center">
-          <h1 className="text-4xl font-bold mb-4">QR Scanner</h1>
+          <h2 className="text-4xl font-bold mb-4">Inquadra un codice QR</h2>
           <div>
             <QrReader
               className="lg:h-[500px] lg:w-[500px] h-[500px] w-[500px]"
