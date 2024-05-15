@@ -21,10 +21,6 @@ export default function Home() {
       </header>
 
       <main className="flex flex-col h-screen justify-center items-center">
-        <div className="flex flex-col lg:flex-row text-2xl pb-8">
-          LETTORE CODICI QR
-        </div>
-
         <div className="flex flex-col lg:flex-row">
           <Link
             href={`/scan`}
