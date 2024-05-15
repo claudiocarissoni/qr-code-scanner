@@ -59,18 +59,18 @@ export default function Scan() {
             href={`/`}
             className=" bg-yellow-200 m-4 text-md rounded-md px-4 py-2 hover:underline"
           >
-            Back to home..
+            Torna alla pagina iniziale..
           </Link>
           {showModal && (
             <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
               <div className="bg-white rounded-md p-4">
-                <p className="text-xl font-bold mb-2">Scanned data:</p>
+                <p className="text-xl font-bold mb-2">Dati letti:</p>
                 <p>{data}</p>
                 <button
                   className="bg-gray-200 text-gray-800 px-4 py-2 rounded-md mt-4 hover:bg-gray-300"
                   onClick={handleCloseModal}
                 >
-                  Close
+                  Chiudi
                 </button>
                 <button
                   className="bg-gray-200 text-gray-800 px-4 py-2 rounded-md mx-4 mt-4 hover:bg-gray-300"

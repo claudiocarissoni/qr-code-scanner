@@ -22,13 +22,13 @@ export default function Genarate() {
             onChange={(e) => {
               setQrCodeValue(e.target.value);
             }}
-            placeholder="Try typing..."
+            placeholder="Scrivi qualcosa..."
           />
           <Link
             href={`/`}
             className=" bg-orange-200 m-4 text-md rounded-md px-4 py-2 hover:underline"
           >
-            Back to home..
+            Torna alla pagina iniziale..
           </Link>
         </div>
       </main>
