@@ -23,7 +23,7 @@ export default function Home() {
       <main className="flex flex-col h-screen justify-center items-center">
         <div className="flex flex-col lg:flex-row">
           <Link
-            href={`/scan`}
+            href={`/scan2`}
             className=" bg-blue-100 m-4 text-4xl rounded-md px-4 py-2 hover:bg-blue-400"
           >
             Leggi QR-CODE
