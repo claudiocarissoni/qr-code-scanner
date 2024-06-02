@@ -1,9 +1,7 @@
 //import "../pages/custumStyle.css";
 import QrScanner from "qr-scanner";
 import { useEffect, useRef, useState } from "react";
-import QrFrame from "../../public/qr-frame.svg";
 import { useRouter } from "next/router";
-import Head from "next/head";
 import Link from "next/link";
 
 function Scan2() {
@@ -18,16 +16,12 @@ function Scan2() {
 
   // Success
   const onScanSuccess = (result) => {
-    // 🖨 Print the "result" to browser console.
     console.log(result);
-    // ✅ Handle success.
-    // 😎 You can do whatever you want with the scanned result.
     setScannedResult(result?.data);
   };
 
   // Fail
   const onScanFail = (err) => {
-    // 🖨 Print the "err" to browser console.
     console.log(err);
   };
 
@@ -39,7 +33,6 @@ function Scan2() {
         preferredCamera: "environment",
         highlightScanRegion: true,
         highlightCodeOutline: true,
-        //overlay: qrBoxEl?.current || undefined,
         maxScansPerSecond: 2,
         returnDetailedScanResult: true,
       });
@@ -72,18 +65,10 @@ function Scan2() {
 
   return (
     <div style={{ textAlign: "center", alignItems: "center" }}>
-      {/* QR */}
+      <p>Inquadra un codice QR</p>
+      <br></br>
       <video ref={videoEl}></video>
-      <div ref={qrBoxEl}>
-        <img
-          className="qr-frame"
-          src={QrFrame}
-          //alt="Qr Frame"
-          width={256}
-          height={256}
-        />
-      </div>
-
+      <br></br>
       <Link
         href={`/`}
         className="bg-yellow-200 m-4 text-md rounded-md px-4 py-2 hover:underline"
@@ -99,7 +84,8 @@ function Scan2() {
             top: 0,
             left: 0,
             zIndex: 99999,
-            color: "white",
+            color: "yellow",
+            background: "black",
           }}
         >
           Scanned Result: {scannedResult}
